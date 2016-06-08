@@ -2,26 +2,30 @@
 
 // <Range, Output>
 export interface Scale {
+    interpolateCool(): any;
+    interpolateInferno(): any;
+    interpolateMagma(): any;
+    interpolatePlasma(): any;
+    interpolateRainbow(): any;
+    interpolateViridis(): any;
+    interpolateWarm(): any;
+
     scaleBand(): ScaleBand;
-    scaleCategory10(): any;
-    scaleCategory20(): any;
-    scaleCategory20b(): any;
-    scaleCategory20c(): any;
-    scaleCool(): any;
     scaleCubehelix(): any;
     scaleIdentity(): any;
     scaleImplicit(): any;
-    scaleInferno(): any;
     scaleLinear(): ScaleContinuous;
     scaleLog(): any;
-    scaleMagma(): any;
     scaleOrdinal(): ScaleOrdinal;
-    scalePlasma(): any;
     scalePoint(): any;
     scalePow(): any;
     scaleQuantile(): any;
     scaleQuantize(): any;
-    scaleRainbow(): any;
+
+    schemeCategory10(): any;
+    schemeCategory20(): any;
+    schemeCategory20b(): any;
+    schemeCategory20c(): any;
 }
 
 export interface ScaleOrdinal {
