@@ -22,10 +22,10 @@ export interface Scale {
     scaleQuantile(): any;
     scaleQuantize(): any;
 
-    schemeCategory10(): any;
-    schemeCategory20(): any;
-    schemeCategory20b(): any;
-    schemeCategory20c(): any;
+    schemeCategory10: string[];
+    schemeCategory20: string[];
+    schemeCategory20b: string[];
+    schemeCategory20c: string[];
 }
 
 export interface ScaleOrdinal {
